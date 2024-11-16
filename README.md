@@ -15,10 +15,10 @@ A modern, beautiful notes application built with Flutter and Firebase. Scribble 
 ## 📱 Screenshots
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="assets/Screenshot_20241116_052250.jpg" width="200" alt="Auth Screen"/>
-  <img src="assets/Screenshot_20241116_052304.jpg" width="200" alt="Empty State"/>
-  <img src="assets/Screenshot_20241116_052401.jpg" width="200" alt="Add Note"/>
-  <img src="assets/Screenshot_20241116_052417.jpg" width="200" alt="Add Note"/>
+  <img src="assets/SignUp.jpg" width="1080" alt="Auth Screen"/>
+  <img src="assets/Register.jpg" width="1080" alt="Empty State"/>
+  <img src="assets/Home.jpg" width="1080" alt="Add Note"/>
+  <img src="assets/AddNote.jpg" width="1080" alt="Add Note"/>
 </div>
 
 ## 🚀 Getting Started
