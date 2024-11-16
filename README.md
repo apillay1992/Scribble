@@ -1,88 +1,76 @@
-# Option 1: Direct command
-echo '# 📝 Scribble - Flutter Notes App
+📝 Scribble - Flutter Notes App
+A modern, beautiful notes application built with Flutter and Firebase. Scribble helps you capture and organize your thoughts with a clean, intuitive interface.
+✨ Features
 
-A beautiful, modern notes application built with Flutter and Firebase. Create, store, and manage your notes with a clean and intuitive interface.
+🔐 Secure Authentication - Email/password authentication using Firebase Auth
+💾 Cloud Storage - All notes are automatically synced with Firebase Cloud Firestore
+🎨 Beautiful UI - Clean, modern interface with Material Design 3
+📱 Responsive Design - Works seamlessly on both mobile and tablet devices
+✏️ Rich Text Editing - Full-featured note editor with title and content support
+🔍 Quick Access - Easy to create, edit, and delete notes
+🌈 Custom Theme - Beautiful purple theme with consistent styling
 
-## ✨ Features
-
-- 🔐 **Secure Authentication**
-    - Email/password authentication using Firebase Auth
-    - Persistent login state
-    - Secure user data isolation
-
-- 💾 **Cloud Storage**
-    - Automatic cloud syncing with Firestore
-    - Real-time updates
-    - Secure data storage
-
-- 📱 **Clean UI/UX**
-    - Material Design 3
-    - Purple theme with consistent styling
-    - Responsive layout
-    - Smooth animations
-
-- ✏️ **Note Management**
-    - Create and edit notes
-    - Delete notes with confirmation
-    - View note history
-    - Rich text support
-
-## 📱 Screenshots
-
+📱 Screenshots
 <div style="display: flex; justify-content: space-between;">
-  <img src="assets/Screenshot_20241116_052250.jpg" width="200" alt="Login Screen"/>
-  <img src="assets/Screenshot_20241116_052304.jpg" width="200" alt="Empty Home"/>
-  <img src="assets/Screenshot_20241116_052401.jpg" width="200" alt="Notes List"/>
+  <img src="assets/Screenshot_20241116_052250.jpg" width="200" alt="Auth Screen"/>
+  <img src="assets/Screenshot_20241116_052304.jpg" width="200" alt="Empty State"/>
+  <img src="assets/Screenshot_20241116_052401.jpg" width="200" alt="Add Note"/>
   <img src="assets/Screenshot_20241116_052417.jpg" width="200" alt="Add Note"/>
 </div>
+🚀 Getting Started
+Prerequisites
 
-## 🚀 Getting Started
+Flutter (2.0 or higher)
+Firebase account
+Firebase CLI
 
-### Prerequisites
+Installation
 
-- Flutter (latest version)
-- Firebase account
-- Android Studio / VS Code
+Clone the repository
 
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/apillay1992/Scribble.git
+bashCopygit clone https://github.com/apillay1992/Scribble.git
 
 Install dependencies
 
 bashCopyflutter pub get
 
-Configure Firebase:
+Configure Firebase
 
 Create a new Firebase project
 Enable Authentication and Cloud Firestore
-Add your Firebase configuration files:
-
-google-services.json for Android
-GoogleService-Info.plist for iOS
-
-
+Download and add your google-services.json (Android) and GoogleService-Info.plist (iOS)
+Update Firebase configuration in lib/firebase_options.dart
 
 
 Run the app
 
 bashCopyflutter run
 🏗️ Architecture
-The app follows a clean architecture pattern:
+The app follows a clean architecture pattern with:
 
-Models: Data structure definitions
-Repositories: Data handling layer
-ViewModels: Business logic
-UI: Presentation layer
+Models: Data classes (NoteModel)
+Repositories: Data handling layer (NoteRepository)
+ViewModels: Business logic (NoteViewModel)
+UI: Presentation layer (screens, widgets)
 
 🛠️ Built With
 
 Flutter - UI framework
-Firebase - Backend services
-Provider - State management
-Firebase UI Auth - Authentication UI
+Firebase - Backend and Authentication
+Provider - State Management
+Cloud Firestore - Database
 
 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.' > README.md
+This project is licensed under the MIT License - see the LICENSE file for details.
+🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
+
+📞 Contact
+Ashley Pillay - @apillay1992
+Project Link: https://github.com/apillay1992/Scribble
