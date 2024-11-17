@@ -1,12 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/ui/screens/add_note_screen.dart';
 import 'package:notes_app/view_models/note_view_model.dart';
 import 'package:provider/provider.dart';
 
-class HomeScreen extends StatefulWidget {  // Changed to StatefulWidget
+class HomeScreen extends StatefulWidget {
   static const routeName = '/home-screen';
 
   const HomeScreen({super.key});
@@ -19,7 +17,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Future<void> _signOut() async {
     try {
       await FirebaseAuth.instance.signOut();
-      // No need to navigate - AuthGate will handle this automatically
     } catch (e) {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -83,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Welcome ${user?.email ?? ""}!',  // Added welcome message
+                    'Welcome ${user?.email ?? ""}!',
                     style: TextStyle(
                       color: Colors.purple[700],
                       fontSize: 18,
