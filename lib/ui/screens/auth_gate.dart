@@ -26,14 +26,14 @@ class AuthGate extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 8.0),
           child: action == AuthAction.signIn
               ? Text(
-            'Welcome to Notes App, please sign in!',
+            'Welcome to Scribble, please sign in!',
             style: TextStyle(
               color: Colors.purple[700],
               fontSize: 16,
             ),
           )
               : Text(
-            'Welcome to Notes App, please sign up!',
+            'Welcome to Scribble, please sign up!',
             style: TextStyle(
               color: Colors.purple[700],
               fontSize: 16,
