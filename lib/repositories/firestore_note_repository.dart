@@ -1,4 +1,3 @@
-// lib/repositories/firestore_note_repository.dart
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:notes_app/models/note_model.dart';
@@ -127,7 +126,6 @@ class FirestoreNoteRepository implements NoteRepository {
       }
     } catch (e) {
       print('Error deleting note: $e');
-      // Don't throw error as per test requirements
     }
   }
 }
