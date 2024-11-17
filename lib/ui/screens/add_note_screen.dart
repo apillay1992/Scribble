@@ -1,4 +1,3 @@
-// lib/ui/screens/add_note_screen.dart
 import 'package:flutter/material.dart';
 import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/view_models/note_view_model.dart';
@@ -38,7 +37,7 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
       final noteViewModel = context.read<NoteViewModel>();
 
       final note = NoteModel(
-        id: widget.note?.id ?? 0, // FirestoreNoteRepository will handle ID generation
+        id: widget.note?.id ?? 0,
         title: _titleController.text,
         content: _contentController.text,
       );
