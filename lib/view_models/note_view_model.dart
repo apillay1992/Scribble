@@ -1,4 +1,3 @@
-// lib/view_models/note_view_model.dart
 import 'package:flutter/foundation.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:notes_app/models/note_model.dart';
