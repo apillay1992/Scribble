@@ -1,4 +1,4 @@
-// lib/models/note_model.dart
+
 class NoteModel {
   final int id;
   final String title;
